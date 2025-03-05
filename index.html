@@ -12,23 +12,23 @@
     <body>
         
         <header class="header">
-            <h1 class="hero-title logo">WebAgency</h1>
+            <h1 class="logo">WebAgency</h1>
             <nav class="main-nav nav-lin">
                 <ul class="services-list nav-link">
                     <li class="nav-link">
-                        <a href="#about">О нас</a>
+                        <a href="#about" class="nav-link">О нас</a>
                     </li>
                     <li>
-                        <a href="#services">Услуги</a>
+                        <a href="#services" class="nav-link">Услуги</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Портфолио</a>
+                        <a href="#portfolio" class="nav-link">Портфолио</a>
                     </li>
                     <li>
-                        <a href="#testimonials">Отзывы</a>
+                        <a href="#testimonials" class="nav-link">Отзывы</a>
                     </li>
                     <li>
-                        <a href="#contact">Контакты</a>
+                        <a href="#contact" class="nav-link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -37,7 +37,7 @@
         <section class="hero-section">
             <h2>Создаем современные и удобные сайты</h2>
             <p>Профессиональная веб-разработка для вашего бизнеса</p>
-            <button class="submit">Заказать сайт</button>
+            <button class="btn primary">Заказать сайт</button>
         </section>
 
         <section class="service-item">
@@ -59,46 +59,46 @@
             </ul>
         </section>
 
-        <section class="portfolio-item portfolio-grid">
+        <section class="portfolio-section">
             <h2>Наши работы</h2>
-            <div>
-                <div class="class="hero-section">
+            <div class="portfolio-grid">
+                <div class="portfolio-item img">
                     <img src="assets/project1.webp" alt="Проект 1" />
                 </div>
-                <div class="class="hero-section">
+                <div class="portfolio-item img">
                     <img src="assets/project2.png" alt="Проект 2" />
                 </div>
-                <div class="class="hero-section">
+                <div class="portfolio-item img">
                     <img src="assets/project3.png" alt="Проект 3" />
                 </div>
             </div>
         </section>
 
-        <section class="form-textarea">
+        <section class="testimonials-section">
             <h2>Отзывы клиентов</h2>
-            <blockquote>
+            <blockquote class="testimonial">
                 <p>"Отличная работа! Сайт сделали быстро и качественно."</p>
-                <cite class="testimonial-author">— Иван Петров, CEO</cite>
+                 <cite class="testimonial-author">— Иван Петров, CEO</cite>
             </blockquote>
         </section>
 
         <footer class="footer-section">
             <h2>Контакты</h2>
-            <p>
+            <p class="contact-info a">
                 Email:
-                <a class="contact-info a" href="mailto:contact@webagency.com">contact@webagency.com</a>
+                <a href="mailto:contact@webagency.com" class="contact-info">contact@webagency.com</a>
             </p>
-            <p>
+            <p class="contact-info a">
                 Телефон:
-                <a href="tel:+79991234567">+7 999 123 45 67</a>
+                <a href="tel:+79991234567" class="contact-info">+7 999 123 45 67</a>
             </p>
-            <form class="contactclass="hero-section">
-                <input type="text" name="name" placeholder="Ваше имя" />
-                <input type="email" name="email" placeholder="Ваш email" />
-                <textarea
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Ваше имя" class="form-input" />
+                <input type="email" name="email" placeholder="Ваш email" class="form-input" />
+                <textarea class="form-input"
                     name="message"
                     placeholder="Ваше сообщение"></textarea>
-                <button type="submit">Отправить</button>
+                <button type="submit" class="submit btn primary">Отправить</button>
             </form>
         </footer>
     </body>
